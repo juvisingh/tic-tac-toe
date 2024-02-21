@@ -13,22 +13,17 @@
         <h3 id="turn" style="color: #F1D3B2;">Turn: 0</h3>
     <br>
     <div class="tictacrows">
-        <div class="row1">
-            <p id="a1">s</p>
-            <p id="a2"></p>
-            <p id="a3"></p>
-        </div>
-        <div class="row2">
-            <p id="b1">s</p>
-            <p id="b2"></p>
-            <p id="b3"></p>
-        </div>
-        <div class="row3">
-            <p id="c1">s</p>
-            <p id="c2"></p>
-            <p id="c3"></p>
-        </div>
+        <div style="border-top: none; border-left: none;" onclick="whenClicked('a1')"><h1 id="a1"></h1></div>
+        <div style="border-top: none;" onclick="whenClicked('a2')"><h1 id="a2"></h1></div>
+        <div style="border-top: none; border-right: none;" onclick="whenClicked('a3')"><h1 id="a3"></h1></div>
+        <div style="border-left: none;" onclick="whenClicked('b1')"><h1 id="b1"></h1></div>
+        <div onclick="whenClicked('b2')"><h1 id="b2"></h1></div>
+        <div style="border-right: none;" onclick="whenClicked('b3')"><h1 id="b3"></h1></div>
+        <div style="border-left: none; border-bottom: none;" onclick="whenClicked('c1')"><h1 id="c1"></h1></div>
+        <div style="border-bottom: none;" onclick="whenClicked('c2')"><h1 id="c2"></h1></div>
+        <div style="border-bottom: none; border-right: none;" onclick="whenClicked('c3')"><h1 id="c3"></h1></div>
     </div>
     </center>
+    <script src="app.js"></script>
 </body>
 </html>

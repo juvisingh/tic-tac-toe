@@ -3,92 +3,16 @@ html {
 }
 .tictacrows {
     display: grid;
-    width: 300px;
-    height: 300px;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3,150px);
     justify-content: center;
-    align-items: center;
-    grid-template-columns: auto auto auto;
     color: #F1D3B2;
-    font-size: 50px;
+    font-size:xx-large;
+    cursor: pointer;
+    padding-top: 20px;
 }
-#a1 {
-    display: flex;
-    width: 100px;
-    height: 100px;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    border: 3px solid black;
-}
-#a2 {
-    display: flex;
-    width: 100px;
-    height: 100px;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    border: 3px solid black;
-}
-#a3 {
-    display: flex;
-    width: 100px;
-    height: 100px;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    border: 3px solid black;
-}
-#b1 {
-    display: flex;
-    width: 100px;
-    height: 100px;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    border: 3px solid black;
-}
-#b2 {
-    display: flex;
-    width: 100px;
-    height: 100px;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    border: 3px solid black;
-}
-#b3 {
-    display: flex;
-    width: 100px;
-    height: 100px;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    border: 3px solid black;
-}
-#c1 {
-    display: flex;
-    width: 100px;
-    height: 100px;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    border: 3px solid black;
-}
-#c2 {
-    display: flex;
-    width: 100px;
-    height: 100px;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    border: 3px solid black;
-}
-#c3 {
-    display: flex;
-    width: 100px;
-    height: 100px;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    border: 3px solid black;
+.tictacrows div{
+    border: #F1D3B2 solid;
+    text-align: center;
+    padding: -10px;
 }
