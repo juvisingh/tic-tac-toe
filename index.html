@@ -8,9 +8,15 @@
 </head> 
 <body>
     <center>
-        <h1 style="color: #F1D3B2; font-size: 50px">Tic-Tac-Toe</h1>
-        <h3 id="playerTurn" style="color: #F1D3B2;">Player: X</h3>
-        <h3 id="turn" style="color: #F1D3B2;">Turn: 0</h3>
+        <h1 style="color: #F1D3B2; font-size: 40px" id = 'title'>Tic-Tac-Toe</h1>
+        <div style="display: flex; justify-content: space-evenly; width: 50%;">
+            <h3 id="playerTurn" style="color: #F1D3B2;">Player: X</h3>
+            <h3 id="turn" style="color: #F1D3B2;">Turn: 0</h3>
+        </div>
+        <div style="display: flex; justify-content: space-evenly; width: 50%;">
+            <h3 id="xwin" style="color: #F1D3B2;">X Wins: 0</h3>
+            <h3 id="owin" style="color: #F1D3B2;">O Wins: 0</h3>
+        </div>
     <br>
     <div class="tictacrows">
         <div style="border-top: none; border-left: none;" onclick="whenClicked('a1');"><h1 id="a1"></h1></div>
@@ -23,6 +29,11 @@
         <div style="border-bottom: none;" onclick="whenClicked('c2')"><h1 id="c2"></h1></div>
         <div style="border-bottom: none; border-right: none;" onclick="whenClicked('c3')"><h1 id="c3"></h1></div>
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <button id="reset" onclick="reset()">New Game</button>
     </center>
     <script src="app.js"></script>
 </body>
