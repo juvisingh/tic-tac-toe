@@ -8,7 +8,9 @@
 </head> 
 <body>
     <center>
+        <!-- title of the page. It is shown at the top center -->
         <h1 style="color: #F1D3B2; font-size: 40px; font-family: myFont;" id = 'title'>Tic-Tac-Toe</h1>
+        <!--div tag with two rows so things look better and are spaced evenly. The width is 50% to shorten the space between the items-->
         <div style="display: flex; justify-content: space-evenly; width: 50%;">
             <h3 id="playerTurn" style="color: #F1D3B2;">Player: X</h3>
             <h3 id="turn" style="color: #F1D3B2;">Turn: 0</h3>
@@ -18,7 +20,7 @@
             <h3 id="owin" style="color: #F1D3B2;">O Wins: 0</h3>
         </div>
     <br>   
-    <div id="myDiv" style="display: none;">This DIV is invisible.</div>
+    <!--the 3x3 tictactoe board-->
     <div class="tictacrows" id = 'tic'>
         <div style="border-top: none; border-left: none;" onclick="whenClicked('a1');"><h1 id="a1"></h1></div>
         <div style="border-top: none;" onclick="whenClicked('a2'); "><h1 id="a2"></h1></div>
@@ -34,8 +36,10 @@
     <br>
     <br>
     <br>
+    <!--reset button for the user to start a new game-->
     <button id="reset" onclick="reset()">New Game</button>
     </center>
+    <!--imports the javascript so it works with the HTML-->
     <script src="app.js"></script>
 </body>
 </html>
