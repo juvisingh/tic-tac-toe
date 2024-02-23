@@ -31,60 +31,69 @@ function getWinner(letter) {
         document.getElementById("a1").style.color = "yellow";
         document.getElementById("a2").style.color = "yellow";
         document.getElementById("a3").style.color = "yellow";
-        document.getElementById('title').innerHTML = letter + " WON!"
+        document.getElementById('title').innerHTML = letter + " WON! Congrats!"
+        document.getElementById('tic').style.pointerEvents = 'none';
         getCount(letter)
     }
     else if (document.getElementById('a1').innerHTML == letter && document.getElementById('b1').innerHTML == letter && document.getElementById('c1').innerHTML == letter) {
         document.getElementById("b1").style.color = "yellow";
         document.getElementById("a1").style.color = "yellow";
         document.getElementById("c1").style.color = "yellow";
-        document.getElementById('title').innerHTML = letter + " WON!"
+        document.getElementById('title').innerHTML = letter + " WON! Congrats!"
+        document.getElementById('tic').style.pointerEvents = 'none';
         getCount(letter)
     }
     else if (document.getElementById('a2').innerHTML == letter && document.getElementById('b2').innerHTML == letter && document.getElementById('c2').innerHTML == letter) {
         document.getElementById("b2").style.color = "yellow";
         document.getElementById("a2").style.color = "yellow";
         document.getElementById("c2").style.color = "yellow";
-        document.getElementById('title').innerHTML = letter + " WON!"
+        document.getElementById('title').innerHTML = letter + " WON! Congrats!"
+        document.getElementById('tic').style.pointerEvents = 'none';
         getCount(letter)
     }
     else if (document.getElementById('a3').innerHTML == letter && document.getElementById('b3').innerHTML == letter && document.getElementById('c3').innerHTML == letter) {
         document.getElementById("b3").style.color = "yellow";
         document.getElementById("a3").style.color = "yellow";
         document.getElementById("c3").style.color = "yellow";
-        document.getElementById('title').innerHTML = letter + " WON!"
+        document.getElementById('title').innerHTML = letter + " WON! Congrats!"
+        document.getElementById('tic').style.pointerEvents = 'none';
         getCount(letter)
     }
     else if (document.getElementById('b1').innerHTML == letter && document.getElementById('b2').innerHTML == letter && document.getElementById('b3').innerHTML == letter) {
         document.getElementById("b1").style.color = "yellow";
         document.getElementById("b2").style.color = "yellow";
         document.getElementById("b3").style.color = "yellow";
-        document.getElementById('title').innerHTML = letter + " WON!"
+        document.getElementById('title').innerHTML = letter + " WON! Congrats!"
+        document.getElementById('tic').style.pointerEvents = 'none';
         getCount(letter)
     }
     else if (document.getElementById('c1').innerHTML == letter && document.getElementById('c2').innerHTML == letter && document.getElementById('c3').innerHTML == letter) {
         document.getElementById("c1").style.color = "yellow";
         document.getElementById("c2").style.color = "yellow";
         document.getElementById("c3").style.color = "yellow";
-        document.getElementById('title').innerHTML = letter + " WON!"
+        document.getElementById('title').innerHTML = letter + " WON! Congrats!"
+        document.getElementById('tic').style.pointerEvents = 'none';
         getCount(letter)
     }
     else if (document.getElementById('a1').innerHTML == letter && document.getElementById('b2').innerHTML == letter && document.getElementById('c3').innerHTML == letter) {
         document.getElementById("a1").style.color = "yellow";
         document.getElementById("b2").style.color = "yellow";
         document.getElementById("c3").style.color = "yellow";
-        document.getElementById('title').innerHTML = letter + " WON!"
+        document.getElementById('title').innerHTML = letter + " WON! Congrats!"
+        document.getElementById('tic').style.pointerEvents = 'none';
         getCount(letter)
     }
     else if (document.getElementById('a3').innerHTML == letter && document.getElementById('b2').innerHTML == letter && document.getElementById('c1').innerHTML == letter) {
         document.getElementById("a3").style.color = "yellow";
         document.getElementById("b2").style.color = "yellow";
         document.getElementById("c1").style.color = "yellow";
-        document.getElementById('title').innerHTML = letter + " WON!"
+        document.getElementById('title').innerHTML = letter + " WON! Congrats!"
+        document.getElementById('tic').style.pointerEvents = 'none';
         getCount(letter)
     }
     else if (document.getElementById('a1').innerHTML != "" && document.getElementById('a2').innerHTML != "" && document.getElementById('a3').innerHTML != "" && document.getElementById('b1').innerHTML != "" && document.getElementById('b2').innerHTML != "" && document.getElementById('b3').innerHTML != "" && document.getElementById('c1').innerHTML != "" && document.getElementById('c2').innerHTML != "" && document.getElementById('c3').innerHTML != ""){
         document.getElementById('title').innerHTML = "TIE GAME"
+        document.getElementById('tic').style.pointerEvents = 'none';
     }
 }
 function getCount(letter) {
@@ -100,6 +109,7 @@ function getCount(letter) {
     }
 }
 function reset() {
+    document.getElementById('tic').style.pointerEvents = 'auto';
     document.getElementById('title').innerHTML = "Tic-Tac-Toe"
     document.getElementById('playerTurn').innerHTML == 'Player: X';
     document.getElementById('turn').innerHTML = 'Turn: 0';
@@ -125,4 +135,3 @@ function reset() {
     document.getElementById("c2").style.color = "#F1D3B2";
     document.getElementById("c3").style.color = "#F1D3B2";
 }
-    
